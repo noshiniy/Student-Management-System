@@ -1,0 +1,21 @@
+--Create The Database
+CREATE DATABASE student_crn;
+
+--Use The Database
+USE student_crn;
+
+--Create The Student Table
+CREATE TABLE students (
+    student_id VARCHAR(10) PRIMARY KEY,
+    title VARCHAR(10) NOT NULL,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    nic VARCHAR(20) UNIQUE NOT NULL,
+    dob DATE NOT NULL,
+    gender VARCHAR(10) NOT NULL,
+    address TEXT NOT NULL,
+    contact_number VARCHAR(20) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    photo BLOB,
+    registration_date DATE NOT NULL
+);
